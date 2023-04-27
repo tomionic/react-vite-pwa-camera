@@ -1,0 +1,7 @@
+{
+  "name": "pwa-camera",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
