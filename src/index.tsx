@@ -3,6 +3,11 @@ import { createRoot } from 'react-dom/client';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import '@ionic/react/css/core.css';
+import '@ionic/react/css/normalize.css';
+import '@ionic/react/css/structure.css';
+import '@ionic/react/css/typography.css';
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
 
 const container = document.getElementById('root');
 const root = createRoot(container!);
@@ -11,7 +16,7 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
+defineCustomElements(window);
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://cra.link/PWA
